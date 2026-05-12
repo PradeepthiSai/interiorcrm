@@ -44,8 +44,7 @@
    - Instance Type: **Free** (or Starter)
    - Environment Variables:
      ```
-     MONGO_URI=<your-mongodb-connection-string>
-     JWT_SECRET=<your-jwt-secret>
+MONGO_URI=your_connection_string_here     JWT_SECRET=<your-jwt-secret>
      NODE_ENV=production
      ```
      ⚠️ **Do NOT paste actual credentials here** — set them in Render's dashboard instead (see section below).
