@@ -1,0 +1,15 @@
+{
+  "name": "interior-crm-backend",
+  "version": "1.0.0",
+  "description": "Luxury interior design CRM backend API",
+  "main": "server.js",
+  "scripts": {
+    "start": "node server.js",
+    "dev": "nodemon server.js"
+  },
+  "engines": {
+    "node": "18.x"
+  },
+  "buildCommand": "npm install",
+  "startCommand": "npm start"
+}
