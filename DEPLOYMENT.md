@@ -44,10 +44,11 @@
    - Instance Type: **Free** (or Starter)
    - Environment Variables:
      ```
-     MONGO_URI=mongodb+srv://your-user:your-pass@cluster.mongodb.net/interior-crm
-     JWT_SECRET=your_super_secret_jwt_key_12345
+     MONGO_URI=<your-mongodb-connection-string>
+     JWT_SECRET=<your-jwt-secret>
      NODE_ENV=production
      ```
+     ⚠️ **Do NOT paste actual credentials here** — set them in Render's dashboard instead (see section below).
    - Click **Create Web Service**
 
 3. **Your backend will be live at:** `https://interiorcrm-api.onrender.com`
@@ -60,11 +61,16 @@
 2. Create a free cluster
 3. Create a database user with a strong password
 4. Whitelist all IP addresses (0.0.0.0/0) or your Render IP
-5. Copy the connection string:
-   ```
-   mongodb+srv://<username>:<password>@cluster0.xyz.mongodb.net/interior-crm?retryWrites=true&w=majority
-   ```
-6. Use this as your `MONGO_URI` in Render
+5. Copy the connection string (save it temporarily, never commit it)
+6. In Render dashboard, go to **Environment** and add:
+   - Key: `MONGO_URI`
+   - Value: Your MongoDB connection string (paste the actual URI here, not in code)
+   - Do **NOT** commit this to GitHub
+
+⚠️ **Security Note**: Database URIs with credentials should ONLY be stored in:
+- Local `.env` file (Git-ignored)
+- Deployment platform environment variables (Render, Vercel dashboards)
+- **NEVER** in committed code or documentation
 
 ---
 
@@ -81,11 +87,13 @@
 
 ### 🔗 Environment Variables Summary
 
-| Service | Variable | Example |
-|---------|----------|---------|
-| **Render Backend** | `MONGO_URI` | `mongodb+srv://user:pass@cluster.mongodb.net/interior-crm` |
-| **Render Backend** | `JWT_SECRET` | `your_super_secret_key` |
-| **Vercel Frontend** | `REACT_APP_API_URL` | `https://interiorcrm-api.onrender.com` |
+| Service | Variable | Where to Set |
+|---------|----------|------|
+| **Render Backend** | `MONGO_URI` | Render Dashboard → Environment |
+| **Render Backend** | `JWT_SECRET` | Render Dashboard → Environment |
+| **Vercel Frontend** | `REACT_APP_API_URL` | Vercel Dashboard → Environment |
+
+⚠️ **Never** put actual `MONGO_URI` or `JWT_SECRET` values in code, documentation, or version control.
 
 ---
 
