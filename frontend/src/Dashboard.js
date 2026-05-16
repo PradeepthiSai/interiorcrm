@@ -2,7 +2,7 @@ import { useState, useEffect } from "react";
 import axios from "axios";
 import LeadCard from "./LeadCard";
 import "./Dashboard.css";
-import { getAuthHeader } from "./utils";
+import { getAuthHeader, getApiUrl } from "./utils";
 
 function Dashboard({ user, onLogout }) {
   const [leads, setLeads] = useState([]);
@@ -25,7 +25,7 @@ function Dashboard({ user, onLogout }) {
   const fetchLeads = async () => {
     try {
       setErrorMessage("");
-      const response = await axios.get("http://localhost:5000/api/leads", {
+      const response = await axios.get(getApiUrl("/api/leads"), {
         headers: getAuthHeader(),
       });
       setLeads(response.data);
@@ -44,7 +44,7 @@ function Dashboard({ user, onLogout }) {
     try {
       setErrorMessage("");
       const response = await axios.post(
-        "http://localhost:5000/api/leads",
+        getApiUrl("/api/leads"),
         newLead,
         { headers: getAuthHeader() }
       );
@@ -67,7 +67,7 @@ function Dashboard({ user, onLogout }) {
     try {
       setErrorMessage("");
       const response = await axios.put(
-        `http://localhost:5000/api/leads/${leadId}`,
+        getApiUrl(`/api/leads/${leadId}`),
         { status: newStatus },
         { headers: getAuthHeader() }
       );
@@ -84,7 +84,7 @@ function Dashboard({ user, onLogout }) {
     if (window.confirm("Delete this lead?")) {
       try {
         setErrorMessage("");
-        await axios.delete(`http://localhost:5000/api/leads/${leadId}`, {
+        await axios.delete(getApiUrl(`/api/leads/${leadId}`), {
           headers: getAuthHeader(),
         });
         setLeads(leads.filter((lead) => lead._id !== leadId));

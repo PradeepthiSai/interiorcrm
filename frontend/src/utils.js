@@ -1,5 +1,9 @@
 // Utility functions for the CRM
 
+export const API_URL = process.env.REACT_APP_API_URL?.replace(/\/+$/, "") || "";
+
+export const getApiUrl = (endpoint) => `${API_URL}${endpoint}`;
+
 export const getAuthHeader = () => {
   const token = localStorage.getItem("token");
   return {

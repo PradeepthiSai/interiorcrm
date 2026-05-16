@@ -10,6 +10,7 @@ import {
   formatTime,
   getAuthHeader,
   getDesignSuggestion,
+  getApiUrl,
 } from "./utils";
 
 function LeadCard({ lead, onStatusChange, onDelete, onRefresh, onDragStart }) {
@@ -37,7 +38,7 @@ function LeadCard({ lead, onStatusChange, onDelete, onRefresh, onDragStart }) {
 
     try {
       const response = await axios.post(
-        `http://localhost:5000/api/leads/${lead._id}/notes`,
+        getApiUrl(`/api/leads/${lead._id}/notes`),
         { text: noteText },
         { headers: getAuthHeader() }
       );

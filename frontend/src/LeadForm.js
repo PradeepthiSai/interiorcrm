@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { getApiUrl, getAuthHeader } from "./utils";
 
 function LeadForm({ onLeadAdded }) {
   const [form, setForm] = useState({
@@ -16,7 +17,9 @@ function LeadForm({ onLeadAdded }) {
   const handleSubmit = async (e) => {
     e.preventDefault();
     try {
-      const res = await axios.post("http://localhost:5000/api/leads", form);
+      const res = await axios.post(getApiUrl("/api/leads"), form, {
+        headers: getAuthHeader(),
+      });
       onLeadAdded(res.data); // update parent state
       setForm({ clientName: "", roomType: "", estimatedBudget: "", status: "New" });
     } catch (err) {

@@ -1,5 +1,6 @@
 import { useState } from "react";
 import axios from "axios";
+import { getApiUrl } from "./utils";
 import "./Login.css";
 
 function Login({ onLoginSuccess, onBack }) {
@@ -24,7 +25,7 @@ function Login({ onLoginSuccess, onBack }) {
     try {
       const endpoint = isLogin ? "/api/auth/login" : "/api/auth/register";
       const response = await axios.post(
-        `http://localhost:5000${endpoint}`,
+        getApiUrl(endpoint),
         isLogin
           ? { email: form.email, password: form.password }
           : form
