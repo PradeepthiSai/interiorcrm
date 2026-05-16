@@ -75,6 +75,9 @@ A boutique **Lead Management & Client Relationship Platform** built for high-end
 
 ## 📸 Screenshots
 
+The following screenshot files are included as placeholders under `docs/screenshots/`.
+Replace them with actual screenshots from the deployed app once available.
+
 ### 🏠 Landing Page
 ![Home Page](./docs/screenshots/home.png)
 - Brand introduction with "Maison Atelier" studio crest
