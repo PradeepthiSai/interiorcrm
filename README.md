@@ -73,57 +73,24 @@ A boutique **Lead Management & Client Relationship Platform** built for high-end
 
 ---
 
-## 📸 Screenshots
+## UI Architecture & Screenshots
 
-The following screenshot files are included as placeholders under `docs/screenshots/`.
-Replace them with actual screenshots from the deployed app once available.
+The following images illustrate the app's UI and layout. These are captured from the deployed site and saved under `docs/screenshots/`.
 
-### 🏠 Landing Page
-![Home Page](./docs/screenshots/home.png)
-- Brand introduction with "Maison Atelier" studio crest
-- Feature highlights (Curated Pipeline, Staff-ready Notes, Premium Alerts)
-- Clear call-to-action buttons for entry
+### 🏠 Home / Landing
+![Home Page](./docs/screenshots/home_actual.jpg)
+- Main landing hero, call-to-action and feature highlights
 
-### 🔓 Login Screen
-![Login](./docs/screenshots/login.png)
-- Clean, centered auth form
-- Toggle between Login/Register
-- Sample admin credentials displayed
-- Back-to-home navigation
+### 📊 Dashboard (Pipeline)
+![Dashboard](./docs/screenshots/dashboard_actual.jpg)
+- Pipeline overview showing the 3-column Kanban and lead cards
 
-### 📊 Dashboard Pipeline
-![Dashboard](./docs/screenshots/dashboard.png)
-- **3-Column Kanban**: New (yellow), Contacted (blue), Converted (green)
-- **Premium Lead Cards** with:
-  - Client name + room type emoji
-  - VIP/Premium/Standard badges
-  - Budget in ₹ (Indian Rupees)
-  - Lead aging timer (days/hours/minutes)
-  - Notes count
-  - Status selector
-  - Awaiting-action alert (if applicable)
-- **Design Inspiration Panel** at top with mood boards
-- **Add Lead Button** + Logout control
+### 🔎 Dashboard Detail Views
+![Dashboard Detail](./docs/screenshots/home_main.jpg)
+![Dashboard Cards](./docs/screenshots/home_body.jpg)
+- Expanded views showing lead cards, notes button and status controls
 
-### 📋 Add Lead Modal
-![Add Lead](./docs/screenshots/add-lead.png)
-- Form for: Client Name, Email, Phone, Room Type, Budget
-- Clean modal overlay with smooth animations
-- Cancel & Create buttons
-
-### 💬 Notes Timeline
-![Notes Modal](./docs/screenshots/notes-modal.png)
-- Vertical timeline of all client interactions
-- Timestamped entries (date + time)
-- Quick-add textarea at bottom
-- Beautiful modal with backdrop blur
-
-### 🎨 Design Inspiration Section
-![Inspiration](./docs/screenshots/inspiration-panel.png)
-- 3 mood cards: Minimal Luxe, Serene Living, Curated Retreat
-- Each with style description and material hints
-- Hover effects for interactivity
-
+If you prefer to remove these images and keep a textual architecture section instead, tell me and I will remove the `docs/screenshots/` image references and rename this heading accordingly.
 ---
 
 ## 🚀 How It Works
