@@ -52,7 +52,7 @@ function Login({ onLoginSuccess, onBack }) {
           <div className="brand-signature">
             <span className="brand-mark">MA</span>
             <div>
-              <p className="brand-title">Maison Atelier</p>
+              <p className="brand-title">InteriorCRM</p>
               <p className="brand-caption">Studio CRM for luxury interiors</p>
             </div>
           </div>

@@ -4,7 +4,7 @@ function Home({ onContinue }) {
   return (
     <div className="home-page">
       <div className="home-hero">
-        <div className="home-badge">Maison Atelier</div>
+        <div className="home-badge">InteriorCRM</div>
         <h1>Luxury Studio CRM for Interior Design Teams</h1>
         <p>
           Welcome to your refined project command center. Organize leads, track notes,
