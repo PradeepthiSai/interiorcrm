@@ -18,12 +18,7 @@ function Home({ onContinue }) {
             Login / Register
           </button>
         </div>
-        <div className="home-note">
-          <p>
-            Sample admin login available after first backend start:
-            <strong> admin@atelier.test / Luxury123!</strong>
-          </p>
-        </div>
+        
       </div>
       <div className="home-features">
         <div className="feature-card">
