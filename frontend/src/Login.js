@@ -50,7 +50,7 @@ function Login({ onLoginSuccess, onBack }) {
         </button>
         <div className="login-header">
           <div className="brand-signature">
-            <span className="brand-mark">MA</span>
+            <span className="brand-mark">🪶</span>
             <div>
               <p className="brand-title">InteriorCRM</p>
               <p className="brand-caption">Studio CRM for luxury interiors</p>

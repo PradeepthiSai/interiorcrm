@@ -135,9 +135,9 @@ function Dashboard({ user, onLogout }) {
       <div className="dashboard-header">
         <div className="header-content">
           <div className="brand-crest">
-            <span className="brand-mark">LA</span>
+            <span className="brand-mark">🪶</span>
             <div className="brand-copy">
-              <p className="brand-title">Maison Atelier</p>
+              <p className="brand-title">InteriorCRM</p>
               <p className="brand-subtitle">Bespoke Interior Studio CRM</p>
             </div>
           </div>
