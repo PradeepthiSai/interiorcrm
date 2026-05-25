@@ -273,5 +273,4 @@ For issues, questions, or feature requests, open an issue on GitHub or reach out
 
 **Built with ❤️ for luxury interior design studios.**
 
-*INTERIOR CRM
- CRM — Where elegance meets efficiency.*
+*INTERIOR CRM — Where elegance meets efficiency.*
