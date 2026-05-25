@@ -1,4 +1,4 @@
-# 🏡 Maison Atelier — Luxury Interior Design CRM
+# 🏡 INTERIOR CRM — Luxury Interior Design CRM
 
 A boutique **Lead Management & Client Relationship Platform** built for high-end interior design studios. Streamline client inquiries, track design projects, manage notes, and prioritize leads with elegance.
 
@@ -273,4 +273,5 @@ For issues, questions, or feature requests, open an issue on GitHub or reach out
 
 **Built with ❤️ for luxury interior design studios.**
 
-*Maison Atelier CRM — Where elegance meets efficiency.*
+*INTERIOR CRM
+ CRM — Where elegance meets efficiency.*
