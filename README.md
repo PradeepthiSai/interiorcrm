@@ -86,11 +86,11 @@ The following images illustrate the app's UI and layout. These are captured from
 - Pipeline overview showing the 3-column Kanban and lead cards
 
 ### 🔎 Dashboard Detail Views
-![Dashboard Detail](./docs/screenshots/home_main.jpg)
+![Dashboard Detail]
 ![Dashboard Cards](./docs/screenshots/home_body.jpg)
 - Expanded views showing lead cards, notes button and status controls
 
-If you prefer to remove these images and keep a textual architecture section instead, tell me and I will remove the `docs/screenshots/` image references and rename this heading accordingly.
+
 ---
 
 ## 🚀 How It Works
