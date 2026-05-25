@@ -2,6 +2,8 @@
 
 A boutique **Lead Management & Client Relationship Platform** built for high-end interior design studios. Streamline client inquiries, track design projects, manage notes, and prioritize leads with elegance.
 
+🚀 **Live Demo:** [InteriorCRM on Vercel](https://interiorcrm-g007xp0z0-pradeepthisais-projects.vercel.app/)
+
 ---
 
 ## ✨ Features
@@ -86,7 +88,7 @@ The following images illustrate the app's UI and layout. These are captured from
 - Pipeline overview showing the 3-column Kanban and lead cards
 
 ### 🔎 Dashboard Detail Views
-![Dashboard Detail]
+![Dashboard Detail](./docs/screenshots/home_main.jpg)
 ![Dashboard Cards](./docs/screenshots/home_body.jpg)
 - Expanded views showing lead cards, notes button and status controls
 
